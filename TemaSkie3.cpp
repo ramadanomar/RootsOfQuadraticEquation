@@ -34,7 +34,7 @@ int main()
 			x2 = (-b - sqrt(delta) / (2 * a));
 
 			int cateAfisate = 0;
-			cout << "Radacinile care apar in intervalul u si v sunt:";
+			cout << "Radacinile sunt diferite si reale. Cele care apar in intervalul u si v sunt:";
 
 			if (x1 >= u && x1 <= v)
 			{
@@ -54,7 +54,7 @@ int main()
 		}
 		else if (delta == 0)
 		{
-			cout << "Radacinile sunt acelesi si reale";
+			cout << "Radacinile sunt aceleasi si reale";
 			x1 = (-b + sqrt(delta)) / (2 * a);
 
 			if (x1 >= u && x1 <= v)
@@ -70,8 +70,8 @@ int main()
 
 			cout << "Radacinile sunt complexe si diferite";
 
-			cout << "Radacina 1 = " << realPart << " + " << imaginaryPart << "i";
-			cout << "Radacina 1 = " << realPart << " - " << imaginaryPart << "i";
+			cout << "Radacina 1 = " << realPart << " + " << imaginaryPart << "i\n";
+			cout << "Radacina 1 = " << realPart << " - " << imaginaryPart << "i\n";
 		}
 	}
 }
